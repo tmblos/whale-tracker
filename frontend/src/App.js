@@ -4,7 +4,7 @@ import { Table } from "@/components/ui/table";
 
 const fetchWhaleData = async () => {
   try {
-    const response = await fetch("https://whale-tracker-backend.onrender.com/api/investments");
+    const response = await fetch("https://whale-tracker-backend.onrender.com");
     if (!response.ok) throw new Error("Failed to fetch data");
     return await response.json();
   } catch (error) {
